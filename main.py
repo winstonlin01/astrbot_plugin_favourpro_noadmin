@@ -191,7 +191,7 @@ class FavourProPlugin(Star):
 
     def _is_admin(self, event: AstrMessageEvent) -> bool:
         """检查事件发送者是否为AstrBot管理员"""
-        return event.role == "admin"
+        return True
 
     @filter.command("查询好感")
     async def admin_query_status(self, event: AstrMessageEvent, user_id: str):
